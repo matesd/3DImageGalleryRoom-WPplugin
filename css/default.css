@@ -47,27 +47,30 @@ a {
 	position: relative;
 }
 
-/* RESPONSIVE - TODO: media queries */
+/* a bit of responsiveness */
+
+@media only screen and (max-width: 768px) {
 
 .container .gr-gallery figure {
 	width: 100%;
+	top: 1.618em !important;
 }
 .container .gr-gallery figure div {
-	width: 90%;
+	max-width: 90%;
 	margin: 0 auto;
 	border-width: 0;
 }
 .container .gr-gallery figure img {
 	max-width: 100%;
 	height: auto !important;
+	max-height: 80%;
 	border-width: 0;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
-/* /RESPONSIVE */
-
+}
 .container > h1 {
 	z-index: 9999;
 	font-weight: 400;
